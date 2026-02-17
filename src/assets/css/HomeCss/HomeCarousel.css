@@ -1,0 +1,14 @@
+.review-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.review-text {
+    font-family: var(--roboto-text);
+    font-size: 0.875rem;
+}
+.review-text strong {
+    font-weight: 900;
+    font-size: 18px;
+}

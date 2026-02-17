@@ -1,0 +1,51 @@
+.domain-card {
+  background: #d9e6e6;
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.35s;
+  cursor: pointer;
+  position: relative;
+}
+
+.clickable-card:hover {
+  background: #c0d4d4;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.inner-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+.inner-card img {
+    max-width: 220px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-family: var(--roboto-text);
+    font-size: 1rem;
+    color: #000;
+}
+
+.card-desc {
+    font-family: var(--roboto-text);
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .domain-card {
+    padding: 20px;
+  }
+}
+.domain-card h5 {
+  font-family: var(--roboto-text);
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+}

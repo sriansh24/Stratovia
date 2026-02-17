@@ -1,0 +1,115 @@
+.work-with-stratovia {
+  padding: 90px 20px;
+  background: #f7f7f7;
+}
+
+.wws-wrapper {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.wws-header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: var(--open-sans-text);
+}
+
+.wws-sub-title {
+  font-size: 1.25rem;
+  font-family: var(--open-sans-text);
+  font-weight: 450;
+  max-width: 900px;
+  margin: auto;
+  color: #333;
+}
+
+.wws-card {
+  width: 100%;
+  min-height: 560px;
+  border-radius: 15px;
+  padding: 40px 20px 20px 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.wws-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.wws-card h3 {
+  font-size: 2.35rem;
+  font-family: var(--roboto-text);
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  max-width: 560px;
+  /* -webkit-text-stroke: 1px #000; */
+}
+
+.domain::before,
+.security::before,
+.world::before,
+.server::before,
+.digital-market::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.domain .wws-card-title,
+.security .wws-card-title,
+.world .wws-card-title,
+.server .wws-card-title,
+.digital-market .wws-card-title {
+  position: relative;
+  color: #fff;
+}
+
+/* .wws-card-global,
+.wws-card-server {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 40px 20px 20px 30px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #e0e0e0, #fff)
+}
+
+.wws-card-global:hover,
+.wws-card-server:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+} */
+
+.domain {
+  background: url(../../img/work-w-stratovia/domain2.webp) center/cover
+    no-repeat;
+}
+
+.security {
+  background: url(../../img/work-w-stratovia/site-security.webp) center/cover
+    no-repeat;
+}
+
+.world {
+  background: url(../../img/work-w-stratovia/world-connect-with-internet.webp)
+    center/cover no-repeat;
+}
+
+.server {
+  background: url(../../img/work-w-stratovia/server.webp) center/cover no-repeat;
+}
+
+.digital-market {
+  background: url(../../img/work-w-stratovia/local-shop.webp) center/cover
+    no-repeat;
+  /* grid-column: span 2; */
+}

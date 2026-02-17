@@ -1,0 +1,106 @@
+.feature-section {
+    width: 100%;
+    padding: 80px 60px;
+    background: #f5f6fa;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.video-container {
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    height: 420px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.feature-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.show {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.feature-cards {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    border: 1px solid #e7e7e7;
+    position: relative;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    /* background: #0bbcd6; */
+    transition: width 0.35s ease;
+    border-radius: 14px 0 0 14px;
+}
+
+.feature-card:hover::before {
+    width: 100%;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1b1b1b;
+}
+
+.feature-card p {
+    color: #5a5a5a;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    border-color: #0bbcd6;
+}
+
+.feature-card:hover h3 {
+    color: #0bbcd6;
+}
+
+@media (max-width: 992px) {
+    .feature-section {
+        grid-template-columns: 1fr;
+        padding: 50px 20px;
+    }
+
+    .video-container {
+        order: -1;
+    }
+}
