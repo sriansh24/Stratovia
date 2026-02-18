@@ -7,6 +7,7 @@ import HomeBusinessIdeas from '../../components/Home-c/HomeBusinessIdeas';
 import WebsiteBuild from '../../components/Home-c/WebsiteBuild';
 import WebsiteBuilderH from '../../components/Home-c/WebsiteBuilder-H';
 import WorkWithStratovia from '../../components/Home-c/WorkWithStratovia';
+// import WwsExperiment from '../../components/Home-c/WwsExperiment';
 import '../../assets/css/HomeCss/Home-Styles.css';
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
       <WebsiteBuild />
       <WebsiteBuilderH />
       <WorkWithStratovia />
+      {/* <WwsExperiment /> */}
       <MainLayoutFooter />
     </>
   );
