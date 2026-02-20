@@ -11,7 +11,7 @@ import bgimage from "../../assets/img/stratovia-airo/person-w-laptop2.webp";
 import stratoviai from "../../assets/img/stratovia-airo/stratovia-ai.jpg";
 import "../../assets/css/HomeCss/StratoviaAiro.css";
 
-function StratoviaAiro() {
+function StratoviaAiro () {
   return (
     <>
       <section className="stratovia-airo">
@@ -20,7 +20,7 @@ function StratoviaAiro() {
             Stratovia Airo<sup>TM</sup>{" "}
           </h2>
         </div>
-        <div className="position-relative">
+        <div className="sa-layout">
           <div className="sa-card">
             <img src={bgimage} alt="Stratovia Airo" className="img-fluid" />
           </div>
@@ -66,11 +66,11 @@ function StratoviaAiro() {
                 </ul>
               </div>
               <div className="col-12 col-md-6 col-lg-7">
-                <img
+                {/* <img
                   src={stratoviai}
                   alt="Stratovia Airo Benefits"
                   style={{ width: "300px", height: "auto"}}
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -79,4 +79,4 @@ function StratoviaAiro() {
     </>
   );
 }
-export default StratoviaAiro;
+export default StratoviaAiro ;
