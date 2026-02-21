@@ -1,149 +1,93 @@
+/* =========================
+   SECTION
+========================= */
 .work-with-stratovia {
-  padding: 140px 20px;
-  background: #f6f9fc;
-  position: relative;
-  background: linear-gradient(180deg, #f6f9fc 0%, #eef2f7 100%);
-  overflow: hidden;
-}
-
-.work-with-stratovia::before {
-  content: "";
-  position: absolute;
-  top: -250px;
-  left: -200px;
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(
-    circle,
-    rgba(99, 102, 241, 0.15),
-    transparent 70%
-  );
-  z-index: 0;
+  padding: 60px 20px;
+  background: #f6f7f9;
 }
 
 .wws-wrapper {
-  max-width: 1320px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
+/* =========================
+   HEADER
+========================= */
 .wws-header {
-  font-size: clamp(2.5rem, 4vw, 3.4rem);
-  font-family: var(--open-sans-text);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-family: var(--ubuntu-text);
   font-weight: 600;
-  letter-spacing: -1.2px;
-  line-height: 1.05;
-  margin-bottom: 15px;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .wws-sub-title {
-  font-size: 1.15rem;
-  font-family: var(--open-sans-text);
+  font-size: 1rem;
+  font-family: var(--raleway-text);
   font-weight: 400;
-  max-width: 900px;
-  margin: auto;
-  color: #5f6c7b;
   line-height: 1.6;
+  letter-spacing: 1px;
+  color: #333;
+  text-align: justify;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
 }
 
-/* .wws-card {
-  width: 100%;
-  min-height: 460px;
-  border-radius: 24px;
-  padding: 40px;
-  cursor: pointer;
+/* =========================
+   GRID (Mobile: 1 column)
+========================= */
+
+.wws-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+.wws-card {
   position: relative;
+  min-height: 260px;
+  padding: 24px;
+  border-radius: 20px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  border-radius: 22px;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  transition:
-    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
-    box-shadow 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
-} */
-
-.wws-card {
-  opacity: 0;
-  transform: translateY(40px);
-  transition:
-    opacity 0.8s cubic-bezier(.2,.8,.2,1),
-    transform 0.8s cubic-bezier(.2,.8,.2,1);
-}
-
-.wws-card:nth-child(1){ animation-delay:.1s; }
-.wws-card:nth-child(2){ animation-delay:.2s; }
-.wws-card:nth-child(3){ animation-delay:.3s; }
-.wws-card:nth-child(4){ animation-delay:.4s; }
-.wws-card:nth-child(5){ animation-delay:.5s; }
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.wws-card.reveal {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.wws-card:hover::before {
-  background:
-    linear-gradient(180deg, rgba(0,0,0,0.1),
-    rgba(0,0,0,0.7));
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .wws-card:hover {
-  /* transform: translateY(-10px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12); */
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
-.wws-card h3 {
-  font-size: clamp(1.6rem, 2vw, 2.4rem);
-  font-family: var(--roboto-text);
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
-  max-width: 560px;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  position: relative;
-  z-index: 2;
-  /* -webkit-text-stroke: 1px #000; */
-}
-
-.domain::before,
-.security::before,
-.world::before,
-.server::before,
-.digital-market::before {
+.wws-card::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.65) 100%
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.7) 100%
   );
-  /* border-radius: 15px; */
-  z-index: 1;
 }
 
-.domain .wws-card-title,
-.security .wws-card-title,
-.world .wws-card-title,
-.server .wws-card-title,
-.digital-market .wws-card-title {
+.wws-card h3 {
+  font-family: var(--raleway-text);
   position: relative;
   color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.4;
   z-index: 2;
-  max-width: 640px;
 }
 
+/* =========================
+   BACKGROUNDS
+========================= */
 .domain {
   background: url(../../img/work-w-stratovia/domain2.webp) center/cover
     no-repeat;
@@ -166,5 +110,79 @@
 .digital-market {
   background: url(../../img/work-w-stratovia/local-shop.webp) center/cover
     no-repeat;
-  /* grid-column: span 2; */
+}
+
+@media (min-width: 768px) {
+
+  .wws-header {
+    font-size: 2.6rem;
+  }
+
+  .wws-sub-title {
+    font-size: 1.05rem;
+    margin-bottom: 60px;
+  }
+
+  .wws-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .wws-card {
+    min-height: 320px;
+    padding: 32px;
+  }
+
+  .wws-card h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .work-with-stratovia {
+    padding: 120px 40px;
+  }
+
+  .wws-header {
+    font-size: 3rem;
+  }
+
+  .wws-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .wws-card {
+    min-height: 360px;
+  }
+
+  /* Make last card bigger */
+  .wws-card.large {
+    grid-column: span 2;
+  }
+
+  .wws-card h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .wws-wrapper {
+    max-width: 1600px;
+  }
+
+  .wws-grid {
+    gap: 36px;
+  }
+
+  .wws-card {
+    min-height: 420px;
+    padding: 40px;
+  }
+
+  .wws-card h3 {
+    font-size: 1.8rem;
+  }
 }
