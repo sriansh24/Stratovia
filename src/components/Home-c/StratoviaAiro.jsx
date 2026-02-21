@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Globe,
-  AppWindow,
-  Sparkles,
-  Mail,
-  FileText,
-  Paperclip,
-} from "lucide-react";
+import { Globe, AppWindow, Sparkles, Mail, FileText, Paperclip } from "lucide-react";
 import bgimage from "../../assets/img/stratovia-airo/person-w-laptop2.webp";
 import bgimage2 from "../../assets/img/stratovia-airo/person-w-laptop2.png";
 import stratoviai from "../../assets/img/stratovia-airo/stratovia-ai.jpg";
