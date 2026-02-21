@@ -38,40 +38,38 @@ function saAiroExperiment() {
               forward movement — a brand focused on building elegant,
               high-performance products and meaningful user experiences.
             </p>
-            <p>
-              <strong>Benefits of Stratovia Airo:</strong>
-            </p>
-            <div className="row">
-              <div className="col-12 col-md-6 col-lg-5">
-                <ul className="list-unstyled">
-                  <li>
-                    <Globe className="mr-2 sa-icon" /> Global Domain Name
-                  </li>
-                  <li>
-                    <AppWindow className="mr-2 sa-icon" /> Online Store
-                  </li>
-                  <li>
-                    <Sparkles className="mr-2 sa-icon" /> Airo<sup>TM</sup> Plus
-                    Logo
-                  </li>
-                  <li>
-                    <Mail className="mr-2 sa-icon" /> Business Email
-                  </li>
-                  <li>
-                    <Paperclip className="mr-2 sa-icon" /> Conversations
-                  </li>
-                  <li>
-                    <FileText className="mr-2 sa-icon" /> Stratovia Studio
-                  </li>
-                </ul>
-              </div>
-              <div className="col-12 col-md-6 col-lg-7">
-                {/* <img
-                  src={stratoviai}
-                  alt="Stratovia Airo Benefits"
-                  style={{ width: "300px", height: "auto"}}
-                /> */}
-              </div>
+            <div className="">
+              <p>
+                <strong>Benefits of Stratovia Airo:</strong>
+              </p>
+              <ul className="list-unstyled">
+                <li>
+                  <Globe className="mr-2 sa-icon" />
+                  <span className="sa-icon-text"> Domain Name</span>
+                </li>
+                <li>
+                  <AppWindow className="mr-2 sa-icon" />
+                  <span className="sa-icon-text">Online Store</span>
+                </li>
+                <li>
+                  <Sparkles className="mr-2 sa-icon" />
+                  <span className="sa-icon-text">
+                    Airo<sup>TM</sup> Plus Logo
+                  </span>
+                </li>
+                <li>
+                  <Mail className="mr-2 sa-icon" />
+                  <span className="sa-icon-text">Business Email</span>
+                </li>
+                <li>
+                  <Paperclip className="mr-2 sa-icon" />
+                  <span className="sa-icon-text">Conversations</span>
+                </li>
+                <li>
+                  <FileText className="mr-2 sa-icon" />
+                  <span className="sa-icon-text">Stratovia Studio</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
