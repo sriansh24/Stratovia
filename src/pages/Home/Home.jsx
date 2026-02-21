@@ -8,8 +8,8 @@ import WebsiteBuild from '../../components/Home-c/WebsiteBuild';
 import WebsiteBuilderH from '../../components/Home-c/WebsiteBuilder-H';
 import StratoviaAiro from '../../components/Home-c/StratoviaAiro';
 // import SaAiroExperiment from '../../components/Home-c/SaAiroExperiment';
-// import WorkWithStratovia from '../../components/Home-c/WorkWithStratovia';
-import WwsExperiment from '../../components/Home-c/WwsExperiment';
+import WorkWithStratovia from '../../components/Home-c/WorkWithStratovia';
+// import WwsExperiment from '../../components/Home-c/WwsExperiment';
 import '../../assets/css/HomeCss/Home-Styles.css';
 
 function Home() {
@@ -23,8 +23,8 @@ function Home() {
       <WebsiteBuilderH />
       <StratoviaAiro />
       {/* <SaAiroExperiment /> */}
-      {/* <WorkWithStratovia /> */}
-      <WwsExperiment />
+      <WorkWithStratovia />
+      {/* <WwsExperiment /> */}
       <MainLayoutFooter />
     </>
   );
