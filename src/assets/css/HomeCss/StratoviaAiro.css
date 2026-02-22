@@ -1,3 +1,6 @@
+/* =========================
+   SECTION
+========================= */
 .stratovia-airo {
   padding: 40px 20px;
   background: #f6f7f9;
@@ -9,6 +12,9 @@
   gap: 24px;
 }
 
+/* =========================
+   CARD
+========================= */
 .sa-card {
   border-radius: 20px;
   overflow: hidden;
@@ -33,11 +39,14 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
 }
 
+/* =========================
+   FONTS
+========================= */
 .sa-header h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-family: var(--ubuntu-text);
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #000;
 }
 
@@ -59,6 +68,9 @@
   line-height: 1.6;
 }
 
+/* =========================
+    ICONS
+========================= */
 .sa-icon {
   background: rgba(0, 255, 106, 0.34);
   color: #000;
@@ -79,6 +91,9 @@
   transition: color 0.3s ease;
 }
 
+/* =========================
+   RESPONSIVENESS
+========================= */
 @media (min-width: 768px) {
   .stratovia-airo {
     padding: 60px 40px;
@@ -95,7 +110,6 @@
 }
 
 @media (min-width: 992px) {
-
   .sa-layout {
     flex-direction: row;
     align-items: stretch;
@@ -109,12 +123,15 @@
     flex: 1;
     max-width: 660px;
   }
-
 }
 
 @media (min-width: 1200px) {
   .stratovia-airo {
     padding: 80px 80px;
+  }
+
+  .sa-card-light h3 {
+    font-size: 1.8rem;
   }
 }
 
@@ -133,7 +150,7 @@
   }
 
   .sa-header h2 {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
   }
 
   .sa-card-light h3 {
