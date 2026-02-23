@@ -10,6 +10,7 @@ import StratoviaAiro from '../../components/Home-c/StratoviaAiro';
 // import SaAiroExperiment from '../../components/Home-c/SaAiroExperiment';
 import WorkWithStratovia from '../../components/Home-c/WorkWithStratovia';
 // import WwsExperiment from '../../components/Home-c/WwsExperiment';
+import StratoviaQnsAns from '../../components/Home-c/StratoviaQnsAns'
 import '../../assets/css/HomeCss/Home-Styles.css';
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
       {/* <SaAiroExperiment /> */}
       <WorkWithStratovia />
       {/* <WwsExperiment /> */}
+      <StratoviaQnsAns />
       <MainLayoutFooter />
     </>
   );

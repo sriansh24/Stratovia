@@ -5,7 +5,7 @@ import logo from '../../assets/img/logo/stratovia-logo.webp';
 function MainLayoutHeader() {
     return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" expand="lg">
+      <Navbar bg="light" data-bs-theme="light" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#home">
             <img

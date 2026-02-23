@@ -108,7 +108,7 @@ function WebsiteBuilderH() {
                   </div>
                   <span className="accordion-title">{item.title}</span>
                 </div>
-                <div className="accordion-body">
+                <div className="my-custom-accordion">
                   <div
                     className="accordion-inner"
                     ref={(el) => (bodyRefs.current[item.id] = el)}
