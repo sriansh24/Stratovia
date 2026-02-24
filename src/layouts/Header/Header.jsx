@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-// import logo from "../../assets/img/logo/stratovia-logo.webp";
-import logo from "../../assets/img/logo/stratovia-logo2.png";
+import logo from "../../assets/img/logo/stratovia-logo3.webp";
+// import logo from "../../assets/img/logo/stratovia-logo2.png";
 import "../../assets/css/GlobalCss/styles.css"
 
 function MainLayoutHeader() {

@@ -1,0 +1,216 @@
+/* =========================
+   ROOT SECTION
+========================= */
+
+.domain-section {
+  padding: 40px 20px;
+  background: #f6f7f9;
+}
+
+.domain-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.domain-title {
+  font-family: var(--ubuntu-text);
+  font-weight: 700;
+  font-size: clamp(2.13rem, 4vw, 3.6rem);
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.domain-subtitle {
+  font-family: var(--raleway-text);
+  font-size: clamp(1.15rem, 2vw, 2.5rem);
+  max-width: 750px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* =========================
+   SEARCH WRAPPER
+========================= */
+
+.domain-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.domain-search-box {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+.domain-input {
+  width: 100%;
+  height: clamp(60px, 7vw, 90px);
+  border-radius: 18px;
+  padding-left: 55px;
+  padding-right: 190px;
+  font-size: clamp(14px, 1.2vw, 18px);
+  border: none;
+  outline: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: 0.3s ease;
+}
+
+.domain-input:focus {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Icon */
+
+.search-icon {
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9aa0a6;
+  font-size: 18px;
+}
+
+/* Button */
+
+.domain-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: clamp(45px, 5.5vw, 75px);
+  padding: 0 clamp(16px, 2vw, 28px);
+  border-radius: 14px;
+  background-color: #00ff00;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.domain-btn:hover {
+  background-color: #00ff00;
+}
+
+/* =========================
+   OFFER CARD
+========================= */
+
+.domain-offer-card {
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 14px;
+  padding: 20px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.domain-offer-card strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.domain-offer-card span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* =========================
+   TABLET (768px+)
+========================= */
+
+@media (min-width: 768px) {
+  .domain-section {
+    padding: 60px 40px;
+    background: #f6f7f9;
+  }
+
+  .domain-search-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .domain-offer-card {
+    margin-left: 20px;
+  }
+}
+
+/* =========================
+   LARGE DESKTOP (1440px+)
+========================= */
+
+@media (min-width: 1440px) {
+  .domain-container {
+    max-width: 1400px;
+  }
+
+  .domain-title {
+    font-size: clamp(2.5rem, 3vw, 3.6rem);
+  }
+
+  .domain-subtitle {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+  }
+}
+
+/* =========================
+   ULTRA WIDE (1920px+)
+========================= */
+
+@media (min-width: 1920px) {
+  .domain-section {
+    padding: 80px 80px;
+  }
+
+  .domain-container {
+    max-width: 1600px;
+  }
+
+  .domain-title {
+    font-size: 4rem;
+  }
+
+  .domain-subtitle {
+    font-size: 1.55rem;
+  }
+}
+
+/* =========================
+   2560px+ (Ultra Wide)
+========================= */
+
+@media (min-width: 2560px) {
+  .domain-section {
+    padding: 100px 120px;
+  }
+
+  .domain-container {
+    max-width: 1800px;
+  }
+
+  .domain-title {
+    font-size: 4rem;
+  }
+
+  .domain-subtitle {
+    font-size: 1.55rem;
+  }
+}

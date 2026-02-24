@@ -11,7 +11,6 @@ import StratoviaAiro from '../../components/Home-c/StratoviaAiro';
 import WorkWithStratovia from '../../components/Home-c/WorkWithStratovia';
 // import WwsExperiment from '../../components/Home-c/WwsExperiment';
 import StratoviaQnsAns from '../../components/Home-c/StratoviaQnsAns'
-import '../../assets/css/HomeCss/Home-Styles.css';
 
 function Home() {
   return (
