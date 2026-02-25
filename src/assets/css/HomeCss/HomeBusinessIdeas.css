@@ -1,51 +1,239 @@
-.domain-card {
-  background: #d9e6e6;
-  border-radius: 20px;
-  padding: 30px;
-  transition: 0.35s;
+/* =========================
+   SECTION
+========================= */
+.home-business-ideas {
+  padding: 40px 20px;
+  background: #f6f7f9;
+}
+
+.hbi-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.hbi-header h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-family: var(--ubuntu-text);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hbi-header p {
+  font-size: 1rem;
+  font-family: var(--raleway-text);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: #000;
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+/* =========================
+   CARD BUTTONS
+========================= */
+/* .card-button {
+  padding: 10px 20px;
+  border: 1px solid #111 !important;
+  border-radius: 50px;
+  font-family: var(--raleway-text);
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
-  position: relative;
+  color: #000;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-.clickable-card:hover {
-  background: #c0d4d4;
-  transform: translateY(-8px);
+.card-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.card-button.active {
+ background: #111;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+} */
+
+.tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.tabs-container {
+  background: #f3f5f7;
+  padding: 6px;
+  border-radius: 50px;
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 700px;
+  overflow-x: auto;
+}
+
+.tab-item {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  background: transparent;
+  font-family: var(--raleway-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tab-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tab-item.active {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   CARD
+========================= */
+.business-cards-section {
+  padding: 60px 0;
+}
+
+.business-card {
+  background: #e3efef;
+  border-radius: 22px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.business-card:hover {
+  transform: translateY(-6px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  background: #d5e6e6;
 }
 
-.inner-card {
-    background: #ffffff;
-    border-radius: 14px;
-    padding: 20px;
-    text-align: center;
+.business-card-image {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.inner-card img {
-    max-width: 220px;
+.business-card-image img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
 }
 
-.card-title {
-    font-weight: 700;
-    font-family: var(--roboto-text);
+.business-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.business-card-body h3 {
+  font-family: var(--raleway-text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.business-card-body p {
+  font-family: var(--raleway-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  flex-grow: 1;
+}
+
+.business-card-body .btn {
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* ---------- SCREEN 768px ---------- */
+@media (min-width: 768px) {
+  .home-business-ideas {
+    padding: 60px 20px;
+  }
+
+  .hbi-header h2 {
+    font-size: 2.6rem;
+  }
+
+  .hbi-header p {
     font-size: 1rem;
-    color: #000;
-}
-
-.card-desc {
-    font-family: var(--roboto-text);
-    font-size: 0.9rem;
-    color: #333;
-    line-height: 1.5;
-}
-
-@media (max-width: 992px) {
-  .domain-card {
-    padding: 20px;
   }
 }
-.domain-card h5 {
-  font-family: var(--roboto-text);
-  font-size: 1.25rem;
-  font-weight: 500;
-  font-style: normal;
+
+/* ---------- SCREEN 1400px ---------- */
+@media (min-width: 1440px) {
+  .home-business-ideas {
+    padding: 80px 80px;
+  }
+
+  .hbi-wrapper {
+    max-width: 1400px;
+  }
+
+  .hbi-header h2 {
+    font-size: clamp(3rem, 3.6vw, 4rem);
+  }
+
+  .hbi-header p {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+  }
+}
+
+/* ---------- SCREEN 1920px ---------- */
+@media (min-width: 1920px) {
+  .hbi-wrapper {
+    max-width: 1600px;
+  }
+
+  .hbi-header h2 {
+    font-size: 4rem
+  }
+
+  .hbi-header p {
+    font-size: 1.22rem;
+  }
+}
+
+/* ---------- SCREEN 2560px ---------- */
+@media (min-width: 2560px) {
+  .home-business-ideas {
+    padding: 100px 120px;
+  }
+
+  .hbi-wrapper {
+    max-width: 1800px;
+  }
+
+  .hbi-header h2 {
+    font-size: 4rem
+  }
+
+  .hbi-header p {
+    font-size: 1.9rem;
+    margin-bottom: 60px;
+  }
 }

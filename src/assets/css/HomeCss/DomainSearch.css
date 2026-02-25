@@ -158,6 +158,10 @@
 ========================= */
 
 @media (min-width: 1440px) {
+  .domain-section {
+    padding: 80px 80px;
+  }
+  
   .domain-container {
     max-width: 1400px;
   }
