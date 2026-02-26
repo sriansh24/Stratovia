@@ -1,106 +1,107 @@
 .feature-section {
-    width: 100%;
-    padding: 80px 60px;
-    background: #f5f6fa;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 50px;
-    align-items: center;
+  width: 100%;
+  padding: 40px 20px;
+  background: #f6f7f9;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .video-container {
-    width: 100%;
-    border-radius: 18px;
-    overflow: hidden;
-    position: relative;
-    height: 420px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 .feature-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.show {
-    opacity: 1;
-}
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+.base {
+  z-index: 1;
 }
 
 .overlay {
-    opacity: 0;
-}
-
-.fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+  z-index: 2;
 }
 
 .feature-cards {
-    background: #fff;
-    padding: 30px;
-    border-radius: 14px;
-    cursor: pointer;
-    transition: all 0.35s ease;
-    border: 1px solid #e7e7e7;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.feature-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0px;
-    height: 100%;
-    /* background: #0bbcd6; */
-    transition: width 0.35s ease;
-    border-radius: 14px 0 0 14px;
-}
-
-.feature-card:hover::before {
-    width: 100%;
-}
-
-.feature-card h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #1b1b1b;
-}
-
-.feature-card p {
-    color: #5a5a5a;
-    line-height: 1.6;
-    font-size: 15px;
+.feature-card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  cursor: pointer;
+  transition:
+    transform 0.4s cubic-bezier(0.21, 1, 0.36, 1),
+    box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease,
+    background 0.3s ease;
+  will-change: transform;
+  transform: scale(1);
 }
 
 .feature-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-    border-color: #0bbcd6;
+  transform: scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  border-color : #00ff00;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 4px;
+  height: 0%;
+  background: #00ff00;
+  border-radius: 4px;
+  transition: height 0.3s ease;
+}
+
+.feature-card:hover::before {
+  height: 60%;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  transition: color 0.3s ease;
 }
 
 .feature-card:hover h3 {
-    color: #0bbcd6;
+  color: #00ff00;
+}
+
+.feature-card p {
+  color: #5a5a5a;
+  line-height: 1.6;
+  font-size: 15px;
 }
 
 @media (max-width: 992px) {
-    .feature-section {
-        grid-template-columns: 1fr;
-        padding: 50px 20px;
-    }
+  .feature-section {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
 
-    .video-container {
-        order: -1;
-    }
+  .video-container {
+    order: -1;
+  }
 }
