@@ -15,19 +15,19 @@
    HEADER
 ========================= */
 .wws-header {
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1.75rem, 2.8vw, 4rem);
   font-family: var(--ubuntu-text);
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .wws-sub-title {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.1vw, 1.25rem);
   font-family: var(--raleway-text);
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.3px;
-  color: #000;
+  color: #111;
   text-align: justify;
   max-width: 700px;
   margin: 0 auto 40px auto;
@@ -81,7 +81,7 @@
   font-family: var(--raleway-text);
   position: relative;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: clamp(1.1rem, 1.3vw, 1.5rem);
   line-height: 1.4;
   z-index: 2;
   text-align: justify;
@@ -122,15 +122,6 @@
     padding: 60px 20px;
   }
 
-  .wws-header {
-    font-size: 2.6rem;
-  }
-
-  .wws-sub-title {
-    font-size: 1rem;
-    margin-bottom: 60px;
-  }
-
   .wws-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -140,20 +131,11 @@
     min-height: 320px;
     padding: 32px;
   }
-
-  .wws-card h3 {
-    font-size: 1.4rem;
-    text-align: justify;
-  }
 }
 
 @media (min-width: 1200px) {
   .work-with-stratovia {
     padding: 80px 80px;
-  }
-
-  .wws-header {
-    font-size: 4rem;
   }
 
   .wws-grid {
@@ -165,14 +147,8 @@
     min-height: 360px;
   }
 
-  /* Make last card bigger */
   .wws-card.large {
     grid-column: span 2;
-  }
-
-  .wws-card h3 {
-    font-size: 1.6rem;
-    text-align: justify;
   }
 }
 
@@ -189,9 +165,24 @@
     min-height: 420px;
     padding: 40px;
   }
+}
 
-  .wws-card h3 {
-    font-size: 1.8rem;
-    text-align: justify;
+@media (min-width: 1920px) {
+  .work-with-stratovia {
+    padding: 90px 90px;
+  }
+
+  .wws-wrapper {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .work-with-stratovia {
+    padding: 100px 120px;
+  }
+
+  .wws-wrapper {
+    max-width: 1800px;
   }
 }

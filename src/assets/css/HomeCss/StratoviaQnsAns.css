@@ -17,7 +17,6 @@
 .sqa-header h1,
 .sqa-header h2 {
   font-family: var(--ubuntu-text);
-  color: #000;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -25,30 +24,32 @@
 }
 
 .sqa-header h1 {
-  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-size: clamp(2.2rem, 3.5vw, 4.2rem);
+  color: #000;
 }
 
 .sqa-header h2 {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.6rem, 2.4vw, 3rem);
+  color: #111;
 }
 
 /* =========================
    ACCORDION CONTENT
 ========================= */
 .sqa-accordion-h .accordion-button {
-  font-size: 2rem;
+  font-size: clamp(1rem, 1.1vw, 1.25rem);
   font-family: var(--raleway-text);
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .sqa-accordion-b {
-  font-size: 1.2rem;
+  font-size: clamp(0.95rem, 1vw, 1.125rem);
   font-family: var(--raleway-text);
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 1px;
-  color: #000;
+  color: #111;
   text-align: justify;
 }
 
@@ -78,7 +79,6 @@
 }
 
 .stratovia-qns-ans .accordion-button:focus {
-  /* box-shadow: 0 0 0 2px #000; */
   box-shadow: none;
   outline: none;
 }
@@ -114,20 +114,8 @@
    RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
-  .sqa-header h1 {
-    font-size: 2.5rem;
-  }
-
-  .sqa-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .sqa-accordion-h .accordion-button {
-    font-size: 1.5rem;
-  }
-
-  .sqa-accordion-b {
-    font-size: 1rem;
+  .stratovia-qns-ans {
+    padding: 60px 20px;
   }
 }
 
@@ -145,39 +133,15 @@
   .sqa-wrapper {
     max-width: 1400px;
   }
-
-  .sqa-header h1 {
-    font-size: clamp(2.5rem, 3vw, 3.8rem);
-  }
-
-  .sqa-accordion-h .accordion-button {
-    font-size: 2.1rem;
-  }
 }
 
 @media (min-width: 1920px) {
   .stratovia-qns-ans {
-    padding: 80px 80px;
+    padding: 90px 90px;
   }
 
   .sqa-wrapper {
     max-width: 1600px;
-  }
-
-  .sqa-header h1 {
-    font-size: 4rem;
-  }
-
-  .sqa-header h2 {
-    font-size: 2.7rem;
-  }
-
-  .sqa-accordion-h .accordion-button {
-    font-size: 2.2rem;
-  }
-
-  .sqa-accordion-b {
-    font-size: 1.25rem;
   }
 }
 
@@ -188,22 +152,5 @@
 
   .sqa-wrapper {
     max-width: 1800px;
-  }
-
-  .sqa-header h1 {
-    font-size: 4.5rem;
-  }
-
-  .sqa-header h2 {
-    font-size: 3rem;
-  }
-
-  .sqa-accordion-h .accordion-button {
-    font-size: 2.4rem;
-  }
-
-  .sqa-accordion-b {
-    font-size: 1.35rem;
-    line-height: 1.8;
   }
 }

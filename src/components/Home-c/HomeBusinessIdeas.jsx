@@ -32,30 +32,6 @@ function HomeBusinessIdeas() {
             </p>
           </div>
           <section className="tabs-wrapper">
-            {/* <div className="col-md-4 mb-3">
-              <button
-                className={`btn card-button w-100 ${activeSection === SECTIONS.DOMAINS ? "active" : ""}`}
-                onClick={() => setActiveSection(SECTIONS.DOMAINS)}
-              >
-                Domains
-              </button>
-            </div>
-            <div className="col-md-4 mb-3">
-              <button
-                className={`btn card-button w-100 ${activeSection === SECTIONS.HOSTING ? "active" : ""}`}
-                onClick={() => setActiveSection(SECTIONS.HOSTING)}
-              >
-                Web and Email Hosting
-              </button>
-            </div>
-            <div className="col-md-4 mb-3">
-              <button
-                className={`btn card-button w-100 ${activeSection === SECTIONS.WORDPRESS ? "active" : ""}`}
-                onClick={() => setActiveSection(SECTIONS.WORDPRESS)}
-              >
-                WordPress Hosting
-              </button>
-            </div> */}
             <div className="tabs-container">
               <button
                 className={`tab-item ${activeSection === SECTIONS.DOMAINS ? "active" : ""}`}

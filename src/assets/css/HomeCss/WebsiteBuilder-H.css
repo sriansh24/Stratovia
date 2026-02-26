@@ -188,6 +188,11 @@
 
 /* --------- 1920px display --------- */
 @media (min-width: 1920px) {
+  .builder-section {
+    padding: 90px 90px;
+    gap: 90px;
+  }
+  
   .builder-image img {
     border-radius: 18px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
