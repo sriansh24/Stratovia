@@ -44,7 +44,11 @@ function WebsiteBuild() {
 
   return (
     <>
-      <section className="feature-section">
+      <section className="website-build-section">
+        <div className="wb-header">
+          <h2>Effortlessly Build Your Website</h2>
+          <p>Powerful tools designed to turn your ideas into reality.</p>
+        </div>
         <div className="video-container">
           <video
             src={activeVideo}
@@ -77,18 +81,18 @@ function WebsiteBuild() {
             </div>
           ))}
         </div>
+        <div className="cta-wrapper">
+          <button
+            className={`btn px-4 py-2 ${activeSection === "website-builder" ? "btn-dark" : "btn-outline-dark"}`}
+            onClick={() => {
+              setActiveSection("website-builder");
+              navigate("/website-builder");
+            }}
+          >
+            Start for free &#8594;
+          </button>
+        </div>
       </section>
-      <div className="d-flex justify-content-center mb-5">
-        <button
-          className={`btn px-4 py-2 ${activeSection === "website-builder" ? "btn-dark" : "btn-outline-dark"}`}
-          onClick={() => {
-            setActiveSection("website-builder");
-            navigate("/website-builder");
-          }}
-        >
-          Start for free &#8594;
-        </button>
-      </div>
     </>
   );
 }
