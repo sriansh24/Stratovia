@@ -2,8 +2,11 @@ import React, { Suspense } from "react";
 import MainLayoutHeader from "../../layouts/Header/Header";
 import MainLayoutFooter from "../../layouts/Footer/Footer";
 import DomainSearch from "../../components/Home-c/DomainSearch";
+import LazySection from "../../components/Common/LazySection";
 import { useInView } from "react-intersection-observer";
-const HomeCarousel = React.lazy(() => import ("../../components/Home-c/HomeCarousel"));
+const HomeCarousel = React.lazy(
+  () => import("../../components/Home-c/HomeCarousel"),
+);
 const HomeBusinessIdeas = React.lazy(
   () => import("../../components/Home-c/HomeBusinessIdeas"),
 );
@@ -23,24 +26,24 @@ const StratoviaQnsAns = React.lazy(
   () => import("../../components/Home-c/StratoviaQnsAns"),
 );
 
-function LazySection({ children }) {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    rootMargin: "200px",
-  });
+// function LazySection({ children }) {
+//   const { ref, inView } = useInView({
+//     triggerOnce: true,
+//     rootMargin: "200px",
+//   });
 
-  return (
-    <div ref={ref}>
-      {inView ? (
-        <Suspense fallback={<div style={{ height: "300px" }} />}>
-          {children}
-        </Suspense>
-      ) : (
-        <div style={{ height: "300px" }} />
-      )}
-    </div>
-  );
-}
+//   return (
+//     <div ref={ref}>
+//       {inView ? (
+//         <Suspense fallback={<div style={{ height: "300px" }} />}>
+//           {children}
+//         </Suspense>
+//       ) : (
+//         <div style={{ height: "300px" }} />
+//       )}
+//     </div>
+//   );
+// }
 
 function Home() {
   return (
@@ -48,28 +51,51 @@ function Home() {
       <MainLayoutHeader />
       <DomainSearch />
       <LazySection>
-        <HomeCarousel />
+        <Suspense fallback={null}>
+          <HomeCarousel />
+        </Suspense>
       </LazySection>
+
       <LazySection>
-        <HomeBusinessIdeas />
+        <Suspense fallback={null}>
+          <HomeBusinessIdeas />
+        </Suspense>
       </LazySection>
+
       <LazySection>
-        <WebsiteBuild />
+        <Suspense fallback={null}>
+          <WebsiteBuild />
+        </Suspense>
       </LazySection>
+
       <LazySection>
-        <WebsiteBuilderH />
+        <Suspense fallback={null}>
+          <WebsiteBuilderH />
+        </Suspense>
       </LazySection>
+
       <LazySection>
-        <StratoviaAiro />
+        <Suspense fallback={null}>
+          <StratoviaAiro />
+        </Suspense>
       </LazySection>
+
       <LazySection>
-        <WorkWithStratovia />
+        <Suspense fallback={null}>
+          <WorkWithStratovia />
+        </Suspense>
       </LazySection>
+
       <LazySection>
-        <StratoviaQnsAns />
+        <Suspense fallback={null}>
+          <StratoviaQnsAns />
+        </Suspense>
       </LazySection>
+      
       <LazySection>
-        <MainLayoutFooter />
+        <Suspense fallback={null}>
+          <MainLayoutFooter />
+        </Suspense>
       </LazySection>
     </>
   );
