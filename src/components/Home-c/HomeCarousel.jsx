@@ -1,47 +1,61 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import carousel1 from "../../assets/img/carousel/carousel1.webp";
-import carousel2 from "../../assets/img/carousel/carousel2.webp";
-import carousel3 from "../../assets/img/carousel/carousel3-3.webp";
-import carousel4 from "../../assets/img/carousel/carousel4.webp";
+import Domain from "../../assets/img/carousel/domain.webp";
+import BusinessGrowth from "../../assets/img/carousel/business-growth.webp";
+import StratoviaTeam from "../../assets/img/carousel/stratovia-team.webp";
+import StratoviaData from "../../assets/img/carousel/stratovia-data.webp";
+import MobileDomain from "../../assets/img/carousel/m-domain.webp";
+import MobileBusinessGrowth from "../../assets/img/carousel/m-business-growth.webp";
+import MobileStratoviaTeam from "../../assets/img/carousel/m-stratovia-team.webp";
+import MobileStratoviaData from "../../assets/img/carousel/m-stratovia-data.webp";
 import "../../assets/css/HomeCss/HomeCarousel.css";
 
 function HomeCarousel() {
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  const slides = [
+    {
+      desktop: Domain,
+      mobile: MobileDomain,
+      title: "Stratovia Airo",
+      desc: `Get a .com only for ₹99* for the first year.
+              Includes Airo™
+              *Terms and conditions apply.`,
+    },
+    {
+      desktop: BusinessGrowth,
+      mobile: MobileBusinessGrowth,
+    },
+    {
+      desktop: StratoviaTeam,
+      mobile: MobileStratoviaTeam,
+    },
+    {
+      desktop: StratoviaData,
+      mobile: MobileStratoviaData,
+    },
+  ];
 
   return (
     <>
       {/* ================= HERO CAROUSEL ================= */}
       <section className="home-carousel">
-        <Carousel activeIndex={index} onSelect={handleSelect} fade>
-          <Carousel.Item>
-            <div className="carousel-img-wrapper">
-              <img src={carousel1} alt="Stratovia Airo" />
-            </div>
-
-            <Carousel.Caption className="carousel-custom-caption">
-              <h1>
-                Stratovia Airo<sup>TM</sup>
-              </h1>
-              <p>
-                Get a .com only for ₹99* for the first year.
-                <br />
-                Includes Airo<sup>TM</sup>
-                <br />
-                *Terms and conditions apply.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          {[carousel2, carousel3, carousel4].map((img, i) => (
+        <Carousel activeIndex={index} onSelect={setIndex} fade>
+          {slides.map((slide, i) => (
             <Carousel.Item key={i}>
               <div className="carousel-img-wrapper">
-                <img src={img} alt={`carousel-${i}`} />
+                <picture>
+                  <source srcSet={slide.desktop} media="(min-width: 768px)" />
+                  <img src={slide.mobile} alt={`carousel-${i}`} />
+                </picture>
               </div>
+
+              {slide.title && (
+                <Carousel.Caption className="carousel-custom-caption">
+                  <h2>{slide.title}</h2>
+                  <p>{slide.desc}</p>
+                </Carousel.Caption>
+              )}
             </Carousel.Item>
           ))}
         </Carousel>

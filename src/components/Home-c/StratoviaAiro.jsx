@@ -7,9 +7,7 @@ import {
   FileText,
   Paperclip,
 } from "lucide-react";
-import bgimage from "../../assets/img/stratovia-airo/person-w-laptop2.webp";
-import bgimage2 from "../../assets/img/stratovia-airo/person-w-laptop2.png";
-import stratoviai from "../../assets/img/stratovia-airo/stratovia-ai.jpg";
+import PersonImage from "../../assets/img/stratovia-airo/person-w-laptop.webp";
 import "../../assets/css/HomeCss/StratoviaAiro.css";
 
 function StratoviaAiro() {
@@ -23,7 +21,7 @@ function StratoviaAiro() {
         </div>
         <div className="sa-layout">
           <div className="sa-card">
-            <img src={bgimage2} alt="Stratovia Airo" className="img-fluid" />
+            <img src={PersonImage} alt="Stratovia Airo" className="img-fluid" />
           </div>
           <div className="sa-card-light">
             <h3 className="text-center">Turn Your Idea Into a Real Website</h3>

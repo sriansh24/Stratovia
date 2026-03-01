@@ -7,10 +7,10 @@ function StratoviaQnsAns() {
     <section className="stratovia-qns-ans">
       <div className="sqa-wrapper">
         <div className="sqa-header">
-          <h1>
+          <h2>
             Millions of customers rely on our domains and web hosting to get
             their ideas online
-          </h1>
+          </h2>
           <h2>Frequently Asked Questions</h2>
         </div>
         <Accordion defaultActiveKey="0">

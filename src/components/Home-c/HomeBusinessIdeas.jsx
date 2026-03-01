@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import Button from 'react-bootstrap/Button';
-import domain1 from "../../assets/img/domain/domain1.jpg";
-import domain2 from "../../assets/img/domain/domain2.webp";
-import domain from "../../assets/img/domain/domain2-1.webp";
+import SearchDomain from "../../assets/img/domain/search-domain.webp";
+import CoDomain from "../../assets/img/domain/co-domain.webp";
+import GetDomain from "../../assets/img/domain/get-domain.webp";
 import "../../assets/css/HomeCss/HomeBusinessIdeas.css";
 
 function HomeBusinessIdeas() {
@@ -68,7 +68,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/domains")}
                     >
                       <div className="business-card-image">
-                        <img src={domain1} alt="Domains" />
+                        <img src={SearchDomain} alt="Domains" />
                       </div>
 
                       <div className="business-card-body">
@@ -98,7 +98,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/co-domain")}
                     >
                       <div className="business-card-image">
-                        <img src={domain2} alt=".co Domain" />
+                        <img src={CoDomain} alt=".co Domain" />
                       </div>
 
                       <div className="business-card-body">
@@ -129,7 +129,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/in-domain")}
                     >
                       <div className="business-card-image">
-                        <img src={domain} alt=".in Domain" />
+                        <img src={GetDomain} alt=".in Domain" />
                       </div>
 
                       <div className="business-card-body">

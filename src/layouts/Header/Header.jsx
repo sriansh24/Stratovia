@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../../assets/img/logo/stratovia-logo3.webp";
+import logo from "../../assets/img/logo/stratovia-logo5.webp";
 // import logo from "../../assets/img/logo/stratovia-logo2.png";
 import "../../assets/css/GlobalCss/styles.css"
 
@@ -8,23 +8,24 @@ function MainLayoutHeader() {
   return (
     <>
       <Navbar
-        className="py-3 main-navbar"
+        className="main-navbar"
         fixed="top"
         bg="dark"
         data-bs-theme="dark"
         expand="lg"
       >
-        <Container fluid className="px-3 px-lg-5 px-xxl-6">
-          <Navbar.Brand href="#home">
+        <Container fluid className="d-flex align-items-center flex-nowrap mx-md-3 px-md-4">
+          <Navbar.Brand href="/" className="me-4">
             <img
               src={logo}
               className="navbar-logo"
               alt="Stratovia Logo"
             />
+            {/* <p><i>STRATOVIA</i></p> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="main-navbar-nav" />
           <Navbar.Collapse id="main-navbar-nav">
-            <Nav className="align-items-lg-center gap-lg-4 text-center text-lg-start">
+            <Nav className="ms-auto align-items-center gap-lg-4">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#blog">Blog</Nav.Link>
               <Nav.Link href="#contact-us">Contact Us</Nav.Link>

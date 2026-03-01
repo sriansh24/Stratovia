@@ -1,10 +1,10 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
-import img1 from "../../assets/img/website-builder-h/feature1.png";
-import img2 from "../../assets/img/website-builder-h/feature2.png";
-import img3 from "../../assets/img/website-builder-h/feature3.png";
-import img4 from "../../assets/img/website-builder-h/feature4.png";
+import Customize from "../../assets/img/website-builder-h/customize.webp";
+import CreateContent from "../../assets/img/website-builder-h/create-content.webp";
+import Store from "../../assets/img/website-builder-h/store.webp";
+import TrackBuisness from "../../assets/img/website-builder-h/track-business.webp";
 import "../../assets/css/HomeCss/WebsiteBuilder-H.css";
 
 function WebsiteBuilderH() {
@@ -16,25 +16,25 @@ function WebsiteBuilderH() {
       id: 1,
       title: "Customize",
       desc: "Click to easily edit or add entire sections like a photo gallery, menu, or price list in seconds, from any device.",
-      image: img1,
+      image: Customize,
     },
     {
       id: 2,
       title: "Create Content",
       desc: "Design beautifully branded content for social media, email marketing and beyond using Stratovia Studio.",
-      image: img2,
+      image: CreateContent,
     },
     {
       id: 3,
       title: "Add a Store",
       desc: "Set up your online shop for free using professional ecommerce templates, then upgrade to a paid plan to start selling.",
-      image: img3,
+      image: Store,
     },
     {
       id: 4,
       title: "Track Your Business",
       desc: "Track analytics, manage orders and customers from one single dashboard.",
-      image: img4,
+      image: TrackBuisness,
     },
   ];
 
