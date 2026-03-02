@@ -22,18 +22,18 @@ function HomeCarousel() {
               Includes Airo™
               *Terms and conditions apply.`,
     },
-    {
-      desktop: BusinessGrowth,
-      mobile: MobileBusinessGrowth,
-    },
-    {
-      desktop: StratoviaTeam,
-      mobile: MobileStratoviaTeam,
-    },
-    {
-      desktop: StratoviaData,
-      mobile: MobileStratoviaData,
-    },
+    // {
+    //   desktop: BusinessGrowth,
+    //   mobile: MobileBusinessGrowth,
+    // },
+    // {
+    //   desktop: StratoviaTeam,
+    //   mobile: MobileStratoviaTeam,
+    // },
+    // {
+    //   desktop: StratoviaData,
+    //   mobile: MobileStratoviaData,
+    // },
   ];
 
   return (
@@ -46,7 +46,11 @@ function HomeCarousel() {
               <div className="carousel-img-wrapper">
                 <picture>
                   <source srcSet={slide.desktop} media="(min-width: 768px)" />
-                  <img src={slide.mobile} loading="lazy" alt={`carousel-${i}`} />
+                  <img
+                    src={slide.mobile}
+                    loading="lazy"
+                    alt={`carousel-${i}`}
+                  />
                 </picture>
               </div>
 

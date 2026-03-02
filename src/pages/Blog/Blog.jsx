@@ -16,7 +16,7 @@ function Blog() {
           ))}
         </h1>
         <hr />
-        <p>Thank you Visit 🙂</p>
+        <p>Thank You For Visit 🙂</p>
       </div>
       {/* <MainLayoutFooter /> */}
     </>

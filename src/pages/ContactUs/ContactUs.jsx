@@ -16,7 +16,7 @@ function ContactUs() {
           ))}
         </h1>
         <hr />
-        <h3>Thank you Visit 🙂</h3>
+        <h3>Thank You For Visit 🙂</h3>
       </div>
       {/* <MainLayoutFooter /> */}
     </>
