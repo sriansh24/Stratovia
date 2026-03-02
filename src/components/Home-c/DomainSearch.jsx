@@ -27,12 +27,14 @@ function DomainSearch() {
             <button className="domain-btn">Find My Domain</button>
           </div>
           <div className="domain-offer-card">
-            <strong>.CLUB</strong>
-            <span>
-              &#8377;200.00/1st Yr<sup>*</sup>.
-              <br />
-              Bring People Together
-            </span>
+            <p>
+              <span className="domain-offer"><strong>.CLUB</strong></span>
+              <span className="d-offer">
+                &#8377;200.00/1st Yr<sup>*</sup>.
+                <br />
+                Bring People Together
+              </span>
+            </p>
           </div>
         </div>
       </div>

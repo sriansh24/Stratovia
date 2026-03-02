@@ -15,7 +15,7 @@ function MainLayoutHeader() {
         expand="lg"
       >
         <Container fluid className="d-flex align-items-center flex-nowrap mx-md-3 px-md-4">
-          <Navbar.Brand href="/" className="me-4">
+          <Navbar.Brand href="/stratovia/home" className="me-4">
             <img
               src={logo}
               className="navbar-logo"
@@ -26,12 +26,12 @@ function MainLayoutHeader() {
           <Navbar.Toggle aria-controls="main-navbar-nav" />
           <Navbar.Collapse id="main-navbar-nav">
             <Nav className="ms-auto align-items-center gap-lg-4">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#blog">Blog</Nav.Link>
-              <Nav.Link href="#contact-us">Contact Us</Nav.Link>
-              <Nav.Link href="#help">Help</Nav.Link>
-              <Nav.Link href="#stratovia-airo">StratoviaAiro</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link href="/stratovia/home">Home</Nav.Link>
+              <Nav.Link href="/stratovia/blog">Blog</Nav.Link>
+              <Nav.Link href="/stratovia/contact-us">Contact Us</Nav.Link>
+              <Nav.Link href="/stratovia/help">Help</Nav.Link>
+              <Nav.Link href="/stratovia/stratovia-airo">StratoviaAiro</Nav.Link>
+              <Nav.Link href="/stratovia/pricing">Pricing</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
