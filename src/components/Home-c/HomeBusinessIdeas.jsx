@@ -68,7 +68,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/domains")}
                     >
                       <div className="business-card-image">
-                        <img src={SearchDomain} alt="Domains" />
+                        <img src={SearchDomain} loading="lazy" alt="Domains" />
                       </div>
 
                       <div className="business-card-body">
@@ -98,7 +98,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/co-domain")}
                     >
                       <div className="business-card-image">
-                        <img src={CoDomain} alt=".co Domain" />
+                        <img src={CoDomain} loading="lazy" alt=".co Domain" />
                       </div>
 
                       <div className="business-card-body">
@@ -129,7 +129,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/in-domain")}
                     >
                       <div className="business-card-image">
-                        <img src={GetDomain} alt=".in Domain" />
+                        <img src={GetDomain} loading="lazy" alt=".in Domain" />
                       </div>
 
                       <div className="business-card-body">

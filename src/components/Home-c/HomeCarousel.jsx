@@ -46,7 +46,7 @@ function HomeCarousel() {
               <div className="carousel-img-wrapper">
                 <picture>
                   <source srcSet={slide.desktop} media="(min-width: 768px)" />
-                  <img src={slide.mobile} alt={`carousel-${i}`} />
+                  <img src={slide.mobile} loading="lazy" alt={`carousel-${i}`} />
                 </picture>
               </div>
 

@@ -21,7 +21,7 @@ function StratoviaAiro() {
         </div>
         <div className="sa-layout">
           <div className="sa-card">
-            <img src={PersonImage} alt="Stratovia Airo" className="img-fluid" />
+            <img src={PersonImage} loading="lazy" alt="Stratovia Airo" className="img-fluid" />
           </div>
           <div className="sa-card-light">
             <h3 className="text-center">Turn Your Idea Into a Real Website</h3>

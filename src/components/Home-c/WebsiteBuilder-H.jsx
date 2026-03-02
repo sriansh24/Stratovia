@@ -132,6 +132,7 @@ function WebsiteBuilderH() {
         <div className="builder-image">
           <img
             src={displayImage}
+            loading="lazy"
             alt="preview"
             className={`preview-image ${fade ? "show" : "hide"}`}
           />

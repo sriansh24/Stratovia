@@ -8,7 +8,7 @@ function DomainSearch() {
     <section className="domain-section">
       <div className="domain-container">
         <div className="domain-content">
-          <h1 className="domain-title">Welcome to Stratovia</h1>
+          <h1 className="domain-title mt-4 pt-4">Welcome to Stratovia</h1>
           <p className="domain-subtitle">
             Your one-stop solution for all your web hosting needs. Experience
             unparalleled performance, security, and support with Stratovia.
