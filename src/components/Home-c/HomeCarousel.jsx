@@ -22,18 +22,18 @@ function HomeCarousel() {
               Includes Airo™
               *Terms and conditions apply.`,
     },
-    // {
-    //   desktop: BusinessGrowth,
-    //   mobile: MobileBusinessGrowth,
-    // },
-    // {
-    //   desktop: StratoviaTeam,
-    //   mobile: MobileStratoviaTeam,
-    // },
-    // {
-    //   desktop: StratoviaData,
-    //   mobile: MobileStratoviaData,
-    // },
+    {
+      desktop: BusinessGrowth,
+      mobile: MobileBusinessGrowth,
+    },
+    {
+      desktop: StratoviaTeam,
+      mobile: MobileStratoviaTeam,
+    },
+    {
+      desktop: StratoviaData,
+      mobile: MobileStratoviaData,
+    },
   ];
 
   return (
