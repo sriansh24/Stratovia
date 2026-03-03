@@ -172,7 +172,6 @@
   }
 
   .navbar-logo {
-    /* height: clamp(50px, 2vw, 70px); */
     width: 30%;
   }
 }
@@ -181,16 +180,9 @@
    FOOTER SECTION
 ========================= */
 .footer-h {
-  font-family: var(--open-sans-text);
-  font-size: 1rem;
+  font-family: var(--ubuntu-text);
+  font-size: 1.15rem;
   font-weight: 400;
-  font-style: normal;
-}
-
-.footer-sub {
-  font-family: var(--roboto-text);
-  font-size: 0.8rem;
-  font-weight: 300;
   font-style: normal;
 }
 
