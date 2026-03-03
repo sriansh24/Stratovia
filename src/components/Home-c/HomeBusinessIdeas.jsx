@@ -8,6 +8,8 @@ import GetDomain from "../../assets/img/domain/get-domain.webp";
 import Email from "../../assets/img/hosting/professional-email-buying.webp";
 import Website from "../../assets/img/hosting/website-buying.webp";
 import Hosting from "../../assets/img/hosting/web-hosting.webp";
+import Wordpress from "../../assets/img/worpress-hosting/wordpress-hosting.webp";
+import SSL from "../../assets/img/worpress-hosting/ssl-certificate.webp";
 import "../../assets/css/HomeCss/HomeBusinessIdeas.css";
 
 function HomeBusinessIdeas() {
@@ -268,7 +270,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/wordpress-hosting")}
                     >
                       <div className="business-card-image">
-                        <img src={Email} loading="lazy" alt="Email" />
+                        <img src={Wordpress} loading="lazy" alt="Wordpress" />
                       </div>
 
                       <div className="business-card-body">
@@ -297,7 +299,7 @@ function HomeBusinessIdeas() {
                       onClick={() => goToPage("/ssl-certificate")}
                     >
                       <div className="business-card-image">
-                        <img src={Website} loading="lazy" alt="Website" />
+                        <img src={SSL} loading="lazy" alt="SSL" />
                       </div>
 
                       <div className="business-card-body">
