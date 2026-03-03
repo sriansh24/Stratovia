@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import SearchDomain from "../../assets/img/domain/search-domain.webp";
 import CoDomain from "../../assets/img/domain/co-domain.webp";
 import GetDomain from "../../assets/img/domain/get-domain.webp";
+import Email from "../../assets/img/hosting/professional-email-buying.webp";
+import Website from "../../assets/img/hosting/website-buying.webp";
+import Hosting from "../../assets/img/hosting/web-hosting.webp";
 import "../../assets/css/HomeCss/HomeBusinessIdeas.css";
 
 function HomeBusinessIdeas() {
@@ -157,60 +160,167 @@ function HomeBusinessIdeas() {
             </section>
           )}
 
+          {/* ========== HOSTING ========== */}
           {activeSection === SECTIONS.HOSTING && (
-            <div className="container my-4">
-              <div className="row g-4">
-                <div className="col-lg-7">
-                  <div className="domain-card h-100">
-                    <h5 className="card-title">ABCDEFGHI</h5>
-                  </div>
-                </div>
-                <div className="col-lg-5">
-                  <div className="row g-4">
-                    <div className="col-12">
-                      <div className="domain-card">
-                        {/* <button className="btn btn-outline-danger w-100">VPS</button> */}
-                        <h5 className="card-title">ABCDEFGHI</h5>
+            <section className="business-cards-section">
+              <div className="container">
+                <div className="row g-4">
+                  {/* CARD 1 */}
+                  <div className="col-12 col-sm-6 col-lg-4">
+                    <div
+                      className="business-card"
+                      onClick={() => goToPage("/professional-business-email")}
+                    >
+                      <div className="business-card-image">
+                        <img src={Email} loading="lazy" alt="Email" />
+                      </div>
+
+                      <div className="business-card-body">
+                        <h3>Professional Email ₹ 45.00 per user/mo</h3>
+                        <p>
+                          Earn trust from your customers with an email address
+                          that matches your domain.
+                        </p>
+
+                        <button
+                          className="btn btn-dark"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            goToPage("/professional-business-email");
+                          }}
+                        >
+                          Get Your Email
+                        </button>
                       </div>
                     </div>
-                    <div className="col-12 mt-2">
-                      <div className="domain-card">
-                        {/* <button className="btn btn-outline-warning w-100">Dedicated Servers</button> */}
-                        <h5 className="card-title">ABCDEFGHI</h5>
+                  </div>
+
+                  {/* CARD 2 */}
+                  <div className="col-12 col-sm-6 col-lg-4">
+                    <div
+                      className="business-card"
+                      onClick={() => goToPage("/create-builder")}
+                    >
+                      <div className="business-card-image">
+                        <img src={Website} loading="lazy" alt="Website" />
+                      </div>
+
+                      <div className="business-card-body">
+                        <h3>Websites ₹ 229.00/mor</h3>
+                        <p>
+                          Start for free and quickly design a beautiful,
+                          mobile-friendly site.
+                        </p>
+
+                        <button
+                          className="btn btn-dark"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            goToPage("/create-builder");
+                          }}
+                        >
+                          Create Your Website
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CARD 3 */}
+                  <div className="col-12 col-sm-6 col-lg-4">
+                    <div
+                      className="business-card"
+                      onClick={() => goToPage("/web-hosting")}
+                    >
+                      <div className="business-card-image">
+                        <img src={Hosting} loading="lazy" alt=".in Domain" />
+                      </div>
+
+                      <div className="business-card-body">
+                        <h3>Web Hosting ₹ 69.00/mo</h3>
+                        <p>Get fast load times and 99.9% uptime guaranteed.</p>
+
+                        <button
+                          className="btn btn-dark"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            goToPage("/web-hosting");
+                          }}
+                        >
+                          Check Plans and Price
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           )}
 
+          {/* ========== HOSTING ========== */}
           {activeSection === SECTIONS.WORDPRESS && (
-            <div className="container my-4">
-              <div className="row g-4">
-                <div className="col-lg-7">
-                  <div className="domain-card h-100">
-                    <h5 className="card-title">JHKLMNOPQR</h5>
-                  </div>
-                </div>
-                <div className="col-lg-5">
-                  <div className="row g-4">
-                    <div className="col-12">
-                      <div className="domain-card">
-                        {/* <button className="btn btn-outline-danger w-100">VPS</button> */}
-                        <h5 className="card-title">JHKLMNOPQR</h5>
+            <section className="business-cards-section">
+              <div className="container">
+                <div className="row g-4">
+                  {/* CARD 1 */}
+                  <div className="col-12 col-sm-6 col-lg-6">
+                    <div
+                      className="business-card"
+                      onClick={() => goToPage("/wordpress-hosting")}
+                    >
+                      <div className="business-card-image">
+                        <img src={Email} loading="lazy" alt="Email" />
+                      </div>
+
+                      <div className="business-card-body">
+                        <h3>Hosting for WordPress ₹ 369.00/mo</h3>
+                        <p>
+                          Let AI quickly build a fully-managed website that's always up to date, with no worries.
+                        </p>
+
+                        <button
+                          className="btn btn-dark"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            goToPage("/wordpress-hosting");
+                          }}
+                        >
+                          View Plans and Price
+                        </button>
                       </div>
                     </div>
-                    <div className="col-12 mt-2">
-                      <div className="domain-card">
-                        {/* <button className="btn btn-outline-warning w-100">Dedicated Servers</button> */}
-                        <h5 className="card-title">JHKLMNOPQR</h5>
+                  </div>
+
+                  {/* CARD 2 */}
+                  <div className="col-12 col-sm-6 col-lg-6">
+                    <div
+                      className="business-card"
+                      onClick={() => goToPage("/ssl-certificate")}
+                    >
+                      <div className="business-card-image">
+                        <img src={Website} loading="lazy" alt="Website" />
+                      </div>
+
+                      <div className="business-card-body">
+                        <h3>SSL Certificates ₹ 3,228.00/yr</h3>
+                        <p>
+                          Help keep sensitive data secure on your site and boost search ranking with an SSL Certificate.
+                        </p>
+
+                        <button
+                          className="btn btn-dark"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            goToPage("/ssl-certificate");
+                          }}
+                        >
+                          Secure Your Data
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           )}
         </div>
       </section>
